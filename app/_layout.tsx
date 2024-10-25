@@ -4,7 +4,7 @@ import { Stack } from "expo-router";
 
 export default function _layout() {
   return (
-    <Stack>
+    <Stack initialRouteName="login">
      {
       routes.map((route) =>(
         <Stack.Screen
@@ -19,4 +19,4 @@ export default function _layout() {
 }
 
 
-const routes = ["index", "product"]
+const routes = ["login", "index", "product"]
